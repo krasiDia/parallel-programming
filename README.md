@@ -25,14 +25,15 @@ ParallelProgramming/
 ## Результаты экспериментов 
 ### Таблицы 
 | Размеры матриц | Время выполнения (мкс) | Объем задачи ($$2N^3$$) | Верификация |
-|-----------|-----------|-----------|-----------|
-| 200  |    48419     |     1.6e+07      | <img width="760" height="65" alt="image" src="https://github.com/user-attachments/assets/50ab235b-0c54-47d1-93ee-c36fcb9fc6f8" /> |
-| 400  |    343108     |     1.28e+08      | <img width="760" height="65" alt="image" src="https://github.com/user-attachments/assets/884b1569-95f5-4ba9-b92e-410e2588f0c5" /> |
-| 800  |    3117564     |      1.024e+09     | <img width="760" height="65" alt="image" src="https://github.com/user-attachments/assets/50ee06bb-d8eb-4dff-ad7d-f4c360089e6b" />|
-| 1200  |    15252978     |     3.456e+09      | <img width="760" height="65" alt="image" src="https://github.com/user-attachments/assets/fb0b145a-4efe-4839-9845-fbc8355ac801" />|
-| 1600  |    40756831     |     8.192e+09      | <img width="760" height="65" alt="image" src="https://github.com/user-attachments/assets/3422656c-73ae-4b01-8aed-0d9bdf414d55" />|
-| 2000  |    162726064    |     1.6e+10      | <img width="761" height="60" alt="image" src="https://github.com/user-attachments/assets/4b67a604-83a8-4daa-bc76-540314ee1f6d" />|
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| 200  |    48419     |     1.6e+07      | <img width="600" height="50" alt="image" src="https://github.com/user-attachments/assets/50ab235b-0c54-47d1-93ee-c36fcb9fc6f8" /> |
+| 400  |    343108     |     1.28e+08      | <img width="600" height="50" alt="image" src="https://github.com/user-attachments/assets/884b1569-95f5-4ba9-b92e-410e2588f0c5" /> |
+| 800  |    3117564     |      1.024e+09     | <img width="600" height="50" alt="image" src="https://github.com/user-attachments/assets/50ee06bb-d8eb-4dff-ad7d-f4c360089e6b" />|
+| 1200  |    15252978     |     3.456e+09      | <img width="600" height="50" alt="image" src="https://github.com/user-attachments/assets/fb0b145a-4efe-4839-9845-fbc8355ac801" />|
+| 1600  |    40756831     |     8.192e+09      | <img width="600" height="50" alt="image" src="https://github.com/user-attachments/assets/3422656c-73ae-4b01-8aed-0d9bdf414d55" />|
+| 2000  |    162726064    |     1.6e+10      | <img width="600" height="50" alt="image" src="https://github.com/user-attachments/assets/4b67a604-83a8-4daa-bc76-540314ee1f6d" />|
 
 ### Графики 
+<img width="760" height="400" alt="Зависимость времени выполнения от размера матрицы" src="https://github.com/user-attachments/assets/9730d22e-bc9e-408e-a477-9ab5d4cb6d93" />
 
 ## Вывод
