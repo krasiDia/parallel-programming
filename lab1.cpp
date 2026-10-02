@@ -2,11 +2,12 @@
 
 int main()
 {
-    const int SIZE_MATRIX = 5;
+    const int SIZE_MATRIX = 100;
     const int FILE_SIZE = 2000;
-    std::ifstream file_1("matrix_1.txt");
-    std::ifstream file_2("matrix_2.txt");
-    std::ofstream file_3("matrix_result.txt");
+    std::ifstream file_1("C:/Users/nkras/Параллельное программирование/matrix_1.txt");
+    std::ifstream file_2("C:/Users/nkras/Параллельное программирование/matrix_2.txt");
+    std::ofstream file_3("C:/Users/nkras/Параллельное программирование/matrix_result.txt");
+    std::ofstream file_4("C:/Users/nkras/Параллельное программирование/result.txt");
     std::vector<std::vector<int>> arr_1(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
     std::vector<std::vector<int>> arr_2(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
     std::vector<std::vector<int>> arr_3(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
@@ -42,7 +43,7 @@ int main()
 
     auto end = std::chrono::high_resolution_clock::now();
 
-    auto time = std::chrono::duration_cast<std::chrono::nanoseconds>(
+    auto time = std::chrono::duration_cast<std::chrono::microseconds>(
         end - start
     );
 
@@ -53,6 +54,6 @@ int main()
         }
         file_3 << "\n";
     }
-    file_3 << "Time: " << time.count() << " nanoseconds\n";
-    file_3 << "Volume of calculations: " << 2 * std::pow(SIZE_MATRIX, 3);
+    file_4 << "Time: " << time.count() << " microseconds\n";
+    file_4 << "Volume of calculations: " << 2 * std::pow(SIZE_MATRIX, 3);
 }

@@ -17,11 +17,7 @@ with open("matrix_2.txt", "r") as file:
         for _ in range(arg.SIZE_MATRIX)
     ])
 
-with open("matrix_result.txt", "r") as file:
-    C_cpp = np.array([
-        list(map(int, file.readline().split()))
-        for _ in range(arg.SIZE_MATRIX)
-    ])
+C_cpp = np.loadtxt("matrix_result.txt", dtype=int)
 
 C_python = A @ B
 
