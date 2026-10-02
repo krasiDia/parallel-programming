@@ -1,5 +1,6 @@
-95 82 52 
-73 68 57 
-97 80 41 
-Time: 600 nanoseconds
-Volume of calculations: 54
+99 125 90 101 
+80 128 102 118 
+92 113 80 123 
+132 182 132 166 
+Time: 1200 nanoseconds
+Volume of calculations: 128

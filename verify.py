@@ -1,9 +1,18 @@
 import numpy as np
 
-SIZE_MATRIX = 3
+SIZE_MATRIX = 4
 
-A = np.loadtxt("matrix_1.txt", dtype=int)
-B = np.loadtxt("matrix_2.txt", dtype=int)
+with open("matrix_1.txt", "r") as file:
+    A = np.array([
+        list(map(int, file.readline().split()[:SIZE_MATRIX]))
+        for _ in range(SIZE_MATRIX)
+    ])
+
+with open("matrix_2.txt", "r") as file:
+    B = np.array([
+        list(map(int, file.readline().split()[:SIZE_MATRIX]))
+        for _ in range(SIZE_MATRIX)
+    ])
 
 with open("matrix_result.txt", "r") as file:
     C_cpp = np.array([

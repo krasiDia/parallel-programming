@@ -2,21 +2,38 @@
 
 int main()
 {
-    int SIZE_MATRIX = 3;
-    std::ifstream file_1("matrix_1.txt");
-    std::ifstream file_2("matrix_2.txt");
-    std::ofstream file_3("matrix_result.txt");
+    const int SIZE_MATRIX = 4;
+    const int FILE_SIZE = 2000;
+    std::ifstream file_1("C:/Users/nkras/Параллельное программирование/matrix_1.txt");
+    std::ifstream file_2("C:/Users/nkras/Параллельное программирование/matrix_2.txt");
+    std::ofstream file_3("C:/Users/nkras/Параллельное программирование/matrix_result.txt");
     std::vector<std::vector<int>> arr_1(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
     std::vector<std::vector<int>> arr_2(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
     std::vector<std::vector<int>> arr_3(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
-    int a{}, b{};
+    
     for (int i = 0; i < SIZE_MATRIX; ++i) {
+
+        std::string line_1;
+        std::string line_2;
+
+        std::getline(file_1, line_1);
+        std::getline(file_2, line_2);
+
+        std::stringstream stream_1(line_1);
+        std::stringstream stream_2(line_2);
+
         for (int j = 0; j < SIZE_MATRIX; ++j) {
-            file_1 >> arr_1[i][j];
-            file_2 >> arr_2[i][j];
+            stream_1 >> arr_1[i][j];
+            stream_2 >> arr_2[i][j];
         }
     }
 
+    for (int i = 0; i < SIZE_MATRIX; ++i) {
+        for (int j = 0; j < SIZE_MATRIX; ++j) {
+            std::print("{} ", arr_1[i][j]);
+        }
+        std::println();
+    }
 
     auto start = std::chrono::high_resolution_clock::now();
 
