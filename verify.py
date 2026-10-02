@@ -1,23 +1,26 @@
 import numpy as np
+import argparse
 
-SIZE_MATRIX = 4
+parser = argparse.ArgumentParser()
+parser.add_argument('SIZE_MATRIX', type=int, help='matrix size')  
+arg = parser.parse_args()
 
 with open("matrix_1.txt", "r") as file:
     A = np.array([
-        list(map(int, file.readline().split()[:SIZE_MATRIX]))
-        for _ in range(SIZE_MATRIX)
+        list(map(int, file.readline().split()[:arg.SIZE_MATRIX]))
+        for _ in range(arg.SIZE_MATRIX)
     ])
 
 with open("matrix_2.txt", "r") as file:
     B = np.array([
-        list(map(int, file.readline().split()[:SIZE_MATRIX]))
-        for _ in range(SIZE_MATRIX)
+        list(map(int, file.readline().split()[:arg.SIZE_MATRIX]))
+        for _ in range(arg.SIZE_MATRIX)
     ])
 
 with open("matrix_result.txt", "r") as file:
     C_cpp = np.array([
         list(map(int, file.readline().split()))
-        for _ in range(SIZE_MATRIX)
+        for _ in range(arg.SIZE_MATRIX)
     ])
 
 C_python = A @ B
