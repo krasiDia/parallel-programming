@@ -3,9 +3,9 @@
 int main()
 {
     int SIZE_MATRIX = 3;
-    std::ifstream file_1("C:/Users/nkras/Параллельное программирование/matrix_1.txt");
-    std::ifstream file_2("C:/Users/nkras/Параллельное программирование/matrix_2.txt");
-    std::ofstream file_3("C:/Users/nkras/Параллельное программирование/matrix_result.txt");
+    std::ifstream file_1("matrix_1.txt");
+    std::ifstream file_2("matrix_2.txt");
+    std::ofstream file_3("matrix_result.txt");
     std::vector<std::vector<int>> arr_1(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
     std::vector<std::vector<int>> arr_2(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
     std::vector<std::vector<int>> arr_3(SIZE_MATRIX, std::vector<int>(SIZE_MATRIX));
