@@ -1,0 +1,5 @@
+95 82 52 
+73 68 57 
+97 80 41 
+Time: 600 nanoseconds
+Volume of calculations: 54
