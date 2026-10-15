@@ -11,4 +11,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_CXX_MODULE_STD ON)
 
+find_package(OpenMP REQUIRED)
+
 add_executable(lab1 lab1.cpp)
+
+target_link_libraries(lab1 PRIVATE OpenMP::OpenMP_CXX)

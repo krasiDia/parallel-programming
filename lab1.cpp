@@ -1,9 +1,10 @@
 ﻿import std;
+#include <omp.h>
 
 int main()
 {
-    const int SIZE_MATRIX = 100;
-    const int FILE_SIZE = 2000;
+    const int SIZE_MATRIX = 2000;
+    const int NUM_STREAMS = 1;
     std::ifstream file_1("C:/Users/nkras/Параллельное программирование/matrix_1.txt");
     std::ifstream file_2("C:/Users/nkras/Параллельное программирование/matrix_2.txt");
     std::ofstream file_3("C:/Users/nkras/Параллельное программирование/matrix_result.txt");
@@ -29,8 +30,10 @@ int main()
         }
     }
 
-    auto start = std::chrono::high_resolution_clock::now();
+    double start = omp_get_wtime();
 
+
+    #pragma omp parallel for num_threads(NUM_STREAMS) schedule(static)
     for (int k = 0; k < SIZE_MATRIX; ++k) {
         for (int i = 0; i < SIZE_MATRIX; ++i) {
             int result = 0;
@@ -41,11 +44,7 @@ int main()
         }
     }
 
-    auto end = std::chrono::high_resolution_clock::now();
-
-    auto time = std::chrono::duration_cast<std::chrono::microseconds>(
-        end - start
-    );
+    double elapsed = omp_get_wtime() - start;
 
 
     for (int i = 0; i < SIZE_MATRIX; ++i) {
@@ -54,6 +53,6 @@ int main()
         }
         file_3 << "\n";
     }
-    file_4 << "Time: " << time.count() << " microseconds\n";
+    file_4 << "Time: " << elapsed << " seconds\n";
     file_4 << "Volume of calculations: " << 2 * std::pow(SIZE_MATRIX, 3);
 }
