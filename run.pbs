@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --job-name=labMPI_1
+#SBATCH --time=0:05:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --partition batch
+#SBATCH --output=output_%j.txt
+
+module load intel/mpi4
+mpirun -r ssh ./labMPI 100
