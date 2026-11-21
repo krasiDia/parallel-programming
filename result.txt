@@ -1,2 +1,0 @@
-Time: 5146 microseconds
-Volume of calculations: 2e+06
