@@ -1,0 +1,269 @@
+==================================
+Matrix size: 200
+Number of processes: 1
+==================================
+Processes: 1
+Matrix size: 200
+Time: 0.0868011 seconds
+Finished: matrix 200, processes 1
+
+==================================
+Matrix size: 200
+Number of processes: 2
+==================================
+Processes: 2
+Matrix size: 200
+Time: 0.0570042 seconds
+Finished: matrix 200, processes 2
+
+==================================
+Matrix size: 200
+Number of processes: 4
+==================================
+Processes: 4
+Matrix size: 200
+Time: 0.029355 seconds
+Finished: matrix 200, processes 4
+
+==================================
+Matrix size: 200
+Number of processes: 8
+==================================
+Processes: 8
+Matrix size: 200
+Time: 0.0151632 seconds
+Finished: matrix 200, processes 8
+
+==================================
+Matrix size: 200
+Number of processes: 16
+==================================
+Invalid matrix size or number of processes
+Finished: matrix 200, processes 16
+
+==================================
+Matrix size: 400
+Number of processes: 1
+==================================
+Processes: 1
+Matrix size: 400
+Time: 0.686874 seconds
+Finished: matrix 400, processes 1
+
+==================================
+Matrix size: 400
+Number of processes: 2
+==================================
+Processes: 2
+Matrix size: 400
+Time: 0.383892 seconds
+Finished: matrix 400, processes 2
+
+==================================
+Matrix size: 400
+Number of processes: 4
+==================================
+Processes: 4
+Matrix size: 400
+Time: 0.179725 seconds
+Finished: matrix 400, processes 4
+
+==================================
+Matrix size: 400
+Number of processes: 8
+==================================
+Processes: 8
+Matrix size: 400
+Time: 0.088557 seconds
+Finished: matrix 400, processes 8
+
+==================================
+Matrix size: 400
+Number of processes: 16
+==================================
+Processes: 16
+Matrix size: 400
+Time: 0.049408 seconds
+Finished: matrix 400, processes 16
+
+==================================
+Matrix size: 800
+Number of processes: 1
+==================================
+Processes: 1
+Matrix size: 800
+Time: 4.38271 seconds
+Finished: matrix 800, processes 1
+
+==================================
+Matrix size: 800
+Number of processes: 2
+==================================
+Processes: 2
+Matrix size: 800
+Time: 2.22284 seconds
+Finished: matrix 800, processes 2
+
+==================================
+Matrix size: 800
+Number of processes: 4
+==================================
+Processes: 4
+Matrix size: 800
+Time: 1.13779 seconds
+Finished: matrix 800, processes 4
+
+==================================
+Matrix size: 800
+Number of processes: 8
+==================================
+Processes: 8
+Matrix size: 800
+Time: 0.559568 seconds
+Finished: matrix 800, processes 8
+
+==================================
+Matrix size: 800
+Number of processes: 16
+==================================
+Processes: 16
+Matrix size: 800
+Time: 0.304371 seconds
+Finished: matrix 800, processes 16
+
+==================================
+Matrix size: 1200
+Number of processes: 1
+==================================
+Processes: 1
+Matrix size: 1200
+Time: 14.5537 seconds
+Finished: matrix 1200, processes 1
+
+==================================
+Matrix size: 1200
+Number of processes: 2
+==================================
+Processes: 2
+Matrix size: 1200
+Time: 7.26316 seconds
+Finished: matrix 1200, processes 2
+
+==================================
+Matrix size: 1200
+Number of processes: 4
+==================================
+Processes: 4
+Matrix size: 1200
+Time: 3.68667 seconds
+Finished: matrix 1200, processes 4
+
+==================================
+Matrix size: 1200
+Number of processes: 8
+==================================
+Processes: 8
+Matrix size: 1200
+Time: 1.90554 seconds
+Finished: matrix 1200, processes 8
+
+==================================
+Matrix size: 1200
+Number of processes: 16
+==================================
+Processes: 16
+Matrix size: 1200
+Time: 1.02403 seconds
+Finished: matrix 1200, processes 16
+
+==================================
+Matrix size: 1600
+Number of processes: 1
+==================================
+Processes: 1
+Matrix size: 1600
+Time: 34.3784 seconds
+Finished: matrix 1600, processes 1
+
+==================================
+Matrix size: 1600
+Number of processes: 2
+==================================
+Processes: 2
+Matrix size: 1600
+Time: 17.0846 seconds
+Finished: matrix 1600, processes 2
+
+==================================
+Matrix size: 1600
+Number of processes: 4
+==================================
+Processes: 4
+Matrix size: 1600
+Time: 9.11635 seconds
+Finished: matrix 1600, processes 4
+
+==================================
+Matrix size: 1600
+Number of processes: 8
+==================================
+Processes: 8
+Matrix size: 1600
+Time: 4.52643 seconds
+Finished: matrix 1600, processes 8
+
+==================================
+Matrix size: 1600
+Number of processes: 16
+==================================
+Processes: 16
+Matrix size: 1600
+Time: 2.41962 seconds
+Finished: matrix 1600, processes 16
+
+==================================
+Matrix size: 2000
+Number of processes: 1
+==================================
+Processes: 1
+Matrix size: 2000
+Time: 66.7477 seconds
+Finished: matrix 2000, processes 1
+
+==================================
+Matrix size: 2000
+Number of processes: 2
+==================================
+Processes: 2
+Matrix size: 2000
+Time: 33.5258 seconds
+Finished: matrix 2000, processes 2
+
+==================================
+Matrix size: 2000
+Number of processes: 4
+==================================
+Processes: 4
+Matrix size: 2000
+Time: 17.0362 seconds
+Finished: matrix 2000, processes 4
+
+==================================
+Matrix size: 2000
+Number of processes: 8
+==================================
+Processes: 8
+Matrix size: 2000
+Time: 8.81921 seconds
+Finished: matrix 2000, processes 8
+
+==================================
+Matrix size: 2000
+Number of processes: 16
+==================================
+Processes: 16
+Matrix size: 2000
+Time: 4.71775 seconds
+Finished: matrix 2000, processes 16
+
+All experiments completed!
