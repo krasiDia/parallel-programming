@@ -1,10 +1,29 @@
 #!/bin/bash
-#SBATCH --job-name=labMPI_1
-#SBATCH --time=0:05:00
+#SBATCH --job-name=labMPI_200
+#SBATCH --time=01:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --partition batch
+#SBATCH --ntasks-per-node=16
+#SBATCH --partition=batch
 #SBATCH --output=output_%j.txt
 
 module load intel/mpi4
-mpirun -r ssh ./labMPI 100
+
+# Размеры матриц
+for N in 200 400 800 1200 1600 2000
+do
+    # Количество MPI-процессов
+    for P in 1 2 4 8 16
+    do
+        echo "=================================="
+        echo "Matrix size: $N"
+        echo "Number of processes: $P"
+        echo "=================================="
+
+        mpirun -r ssh -n "$P" ./labMPI "$N"
+
+        echo "Finished: matrix $N, processes $P"
+        echo ""
+    done
+done
+
+echo "All experiments completed!"
